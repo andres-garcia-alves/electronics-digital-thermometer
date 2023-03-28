@@ -29,25 +29,25 @@ Notes:
 
 ### Screenshots
 
-| Diagram - Schematics 01                           | Diagram - Schematics 02                           |
-|---------------------------------------------------|---------------------------------------------------|
-| ![](Resources/01 - Diagram Squematic 01.jpg)      | ![](Resources/02 - Diagram Squematic 02.jpg)      |
+| Diagram - Schematics 01                         | Diagram - Schematics 02                         |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/01-diagram-squematic-01.jpg)      | ![](Resources/02-diagram-squematic-02.jpg)      |
 
-| Diagram - Physical Layout                         |  Prototype - Main Block                           |
-|---------------------------------------------------|---------------------------------------------------|
-| ![](Resources/03 - Diagram Physical Layout.jpg)   | ![](Resources/04 - Prototype - Main Block 01.jpg) |
+| Diagram - Physical Layout                       |  Prototype - Main Block                         |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/03-diagram-physical-layout.jpg)   | ![](Resources/04-prototype-main-block-01.jpg)   |
 
-| Prototype - Auto OFF                              |  Prototype - Full                                 |
-|---------------------------------------------------|---------------------------------------------------|
-| ![](Resources/06 - Prototype - Auto OFF.jpg)      | ![](Resources/07 - Prototype - Full.jpg)          |
+| Prototype - Auto OFF                            |  Prototype - Full                               |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/06-prototype-auto-off.jpg)        | ![](Resources/07-prototype-full.jpg)            |
 
-| Building 01                                       |  Building 02                                      |
-|---------------------------------------------------|---------------------------------------------------|
-| ![](Resources/08 - Building 01.jpg)               | ![](Resources/09 - Building 02.jpg)               |
+| Building 01                                     |  Building 02                                    |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/08-building-01.jpg)               | ![](Resources/09-building-02.jpg)               |
 
-| Project Final                                     | Project Final (YouTube video)                     |
-|---------------------------------------------------|---------------------------------------------------|
-| ![](Resources/11 - Building 04.jpg)               | [![](Resources/Proyect-Final.jpg)](https://youtu.be/) |
+| Project Final                                   | Project Final (YouTube video)                   |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/11-building-04.jpg)               | [![](Resources/Proyect-Final.jpg)](https://youtu.be/) |
 
 See 'Rescources' sub-folder for more pictures of the proyect.
 
