@@ -33,21 +33,21 @@ Notes:
 |-------------------------------------------------|-------------------------------------------------|
 | ![](Resources/01-diagram-squematic-01.jpg)      | ![](Resources/02-diagram-squematic-02.jpg)      |
 
-| Diagram - Physical Layout                       |  Prototype - Main Block                         |
+| Diagram - Physical Layout                       |  Prototype                                      |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/03-diagram-physical-layout.jpg)   | ![](Resources/04-prototype-main-block-01.jpg)   |
-
-| Prototype - Auto OFF                            |  Prototype - Full                               |
-|-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/06-prototype-auto-off.jpg)        | ![](Resources/07-prototype-full.jpg)            |
+| ![](Resources/03-diagram-physical-layout.jpg)   | ![](Resources/04-prototype-01.jpg)              |
 
 | Building 01                                     |  Building 02                                    |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/08-building-01.jpg)               | ![](Resources/09-building-02.jpg)               |
+| ![](Resources/07-building-02.jpg)               | ![](Resources/13-building-08.jpg)               |
+
+| Building 03                                     |  Box Shaping                                    |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/14-building-09.jpg)               | ![](Resources/16-box-shaping-02.jpg)            |
 
 | Project Final                                   | Project Final (YouTube video)                   |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/11-building-04.jpg)               | [![](Resources/Proyect-Final.jpg)](https://youtu.be/) |
+| ![](Resources/19-project-final-01.jpg)          | [![](Resources/20-project-final-02.jpg)]([https://youtu.be/](https://youtu.be/rd8s7MKu5Gk)) |
 
 See 'Rescources' sub-folder for more pictures of the proyect.
 
