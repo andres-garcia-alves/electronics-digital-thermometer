@@ -8,7 +8,8 @@ This project use the following electronic components:
 - 1 x Arduino UNO / Nano v3
 - 1 x DHT11 temperature/humidity sensor
 - 1 x 3461BS-1 display (4 digit, 7 segment multiplexed display)
-- 8 x 1k5 ohm resistors
+- 8 x 1k ohm resistors
+- 1 x 10k ohm resistor
 - 1 x Transistor BC547 NPN
 - 1 x Electrolitic capacitor 470uF 10v
 - 1 x Push-button
@@ -58,6 +59,8 @@ See 'Rescources' sub-folder for more pictures of the proyect.
 v1.0 (2022.12.08) - Initial release.  
 v1.1 (2022.12.10) - Re-arrange LEDs pin-out to simplefy PCB.  
 v1.2 (2022.12.11) - Using masked bits to improve character display.  
+v1.3 (2023.03.28) - Use of headers for better readability.  
+v1.4 (2023.04.08) - Hardware re-desing.  
 
 &nbsp;
 
