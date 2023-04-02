@@ -1,5 +1,5 @@
 /*
-Digital Thermometer v1.3
+Digital Thermometer v1.4
 
 Created by: Andres Garcia Alves <andres.garcia.alves@gmail.com>
 Microcontroller: Arduino Nano (ATMega328 @16Mhz)
@@ -7,7 +7,8 @@ Microcontroller: Arduino Nano (ATMega328 @16Mhz)
 Version 1.0, 2022.12.08 - Initial release.
 Version 1.1, 2022.12.10 - Re-arrange LEDs pin-out to simplefy PCB.
 Version 1.2, 2022.12.11 - Using masked bits to improve character display.
-Version 1.3, 2023.03.28 - Hardware re-desing.
+Version 1.3, 2023.03.28 - Use of headers for better readability.
+Version 1.4, 2023.04.08 - Hardware re-desing.
 
 This source code is licensed under GPL v3.0
 
