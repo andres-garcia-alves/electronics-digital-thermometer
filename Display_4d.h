@@ -49,6 +49,7 @@ void displayCharacter(char character, bool dotEnabled) {
     case 'c': maskedBits = 0b01011000; break;
     case 'h': maskedBits = 0b01110100; break;
     case 'C': maskedBits = 0b00111001; break;
+    case '-': maskedBits = 0b01000000; break;
     default:  maskedBits = 0b00000000;
   }
 

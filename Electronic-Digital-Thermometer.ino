@@ -43,7 +43,7 @@ D13 -> output to selector pin for digit 3
 
 
 // variables
-DHT dht(SENSOR_DHT_OUT, SENSOR_TYPE);
+DHT dht(SENSOR_DHT_DATA, SENSOR_TYPE);
 
 eDataMode dataMode = NONE;
 byte currentDigit = 0;
@@ -51,6 +51,7 @@ byte currentDigit = 0;
 unsigned long int currentMillis = 0;
 unsigned long int nextSensorTick = 0;
 unsigned long int nextDataModeTick = 0;
+byte seansorFailures = 0;
 
 
 void setup() {
@@ -77,7 +78,6 @@ void setup() {
   // initialize DHT sensor
   pinMode(SENSOR_DHT_VCC, OUTPUT);
   digitalWrite(SENSOR_DHT_VCC, HIGH);
-  //delay(1500);
   dht.begin();
 
   // initial text
@@ -92,12 +92,12 @@ void loop() {
   // sensor reading
   if (currentMillis > nextSensorTick) {
 
-    sensorMeasure = readSensor(); // sensor reading
-    nextSensorTick = currentMillis + SENSOR_INTERVAL; // next sensor reading
+    // next sensor reading
+    nextSensorTick = currentMillis + SENSOR_INTERVAL;
 
-    if (sensorMeasure.valid) {
-      displayText = buildDisplayText(sensorMeasure);
-    }
+    // sensor reading
+    sensorMeasure = readSensor();
+    displayText = buildDisplayText(sensorMeasure);
 
     #if DEBUG
     updateSerialPort(sensorMeasure);
@@ -117,56 +117,73 @@ void loop() {
   }
 
   // update display & move to next digit
-  if (sensorMeasure.valid) {
-    updateDisplay(displayText, dataMode, currentDigit);
-    currentDigit = (++currentDigit) % 4; // valid range 0-3
-  }
+  updateDisplay(displayText, dataMode, currentDigit);
+  currentDigit = (++currentDigit) % 4; // valid range 0-3
 
   delay(5);
 }
 
 
 SensorMeasure readSensor() {
-
   SensorMeasure aux;
-  aux.valid = true;
+
   aux.temperature = dht.readTemperature();  // temperature (celsius degrees)
   aux.humidity = dht.readHumidity();        // humidity
 
   // check for sensor-reading errors
   if (isnan(aux.temperature) || isnan(aux.humidity)) {
     aux.valid = false;
-
+    seansorFailures++;
+    
     #if DEBUG
     Serial.println("Error obteniendo los datos del sensor DHT11");
+    /*aux.valid = true;
+    aux.temperature = 88.8;
+    aux.heatIndex = 88.8;
+    aux.humidity = 0;*/
     #endif
-  }
 
-  // calculte heat-index (celsius degrees)
-  aux.heatIndex = dht.computeHeatIndex(aux.temperature, aux.humidity, false);
+  } else { // calculte heat-index (celsius degrees)
+    aux.valid = true;
+    seansorFailures = 0;
+    aux.heatIndex = dht.computeHeatIndex(aux.temperature, aux.humidity, false);
+  }
 
   return aux;
 }
 
 
 DisplayText buildDisplayText(SensorMeasure sensorMeasure) {
-
   DisplayText aux;
-  aux.temperature = String(sensorMeasure.temperature, 1);
-  aux.temperature.replace(".", "");
-  aux.temperature += "c";
-  aux.temperatureDotPos = 1;
 
-  aux.heatIndex = String(sensorMeasure.heatIndex, 1);
-  aux.heatIndex.replace(".", "");
-  aux.heatIndex += "C";  
-  aux.heatIndexDotPos = 1;
+  if (sensorMeasure.valid) {
+    aux.temperature = String(sensorMeasure.temperature, 1);
+    aux.temperature.replace(".", "");
+    aux.temperature += "c";
+    aux.temperatureDotPos = 1;
+  
+    aux.heatIndex = String(sensorMeasure.heatIndex, 1);
+    aux.heatIndex.replace(".", "");
+    aux.heatIndex += "C";  
+    aux.heatIndexDotPos = 1;
+  
+    aux.humidity = String(sensorMeasure.humidity, 1);
+    aux.humidity.replace(".", "");
+    aux.humidity.setCharAt(2, " ");
+    aux.humidity += "h";
+    aux.humidityDotPos = -1;
 
-  aux.humidity = String(sensorMeasure.humidity, 1);
-  aux.humidity.replace(".", "");
-  aux.humidity.setCharAt(2, " ");
-  aux.humidity += "h";
-  aux.humidityDotPos = -1;
+  } else {
+    String failureText = "----" + String(seansorFailures);
+    failureText = failureText.substring(failureText.length() - 4);
+
+    aux.temperature = failureText;
+    aux.temperatureDotPos = -1;
+    aux.heatIndex = failureText;
+    aux.heatIndexDotPos = -1;
+    aux.humidity = failureText;
+    aux.humidityDotPos = -1;
+  }
 
   return aux;
 }

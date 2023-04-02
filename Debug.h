@@ -2,7 +2,7 @@
 #define DEBUG_H
 
 // enable/disable debuging
-#define DEBUG       false
+#define DEBUG       true
 
 #if DEBUG
 void updateSerialPort(SensorMeasure sensorMeasure) {
