@@ -50,7 +50,7 @@ Notes:
 |-------------------------------------------------|-------------------------------------------------|
 | ![](Resources/19-project-final-01.jpg)          | [![](Resources/20-project-final-02.jpg)](https://youtu.be/rd8s7MKu5Gk) |
 
-See 'Rescources' sub-folder for more pictures of the proyect.
+See 'Rescources' sub-folder for more pictures & videos of the project.
 
 &nbsp;
 
@@ -65,4 +65,4 @@ v1.4 (2023.04.08) - Hardware re-desing.
 &nbsp;
 
 This source code is licensed under GPL v3.0  
-Please send me your feedback about this app: andres.garcia.alves@gmail.com
+Please send me your feedback about this project: andres.garcia.alves@gmail.com
