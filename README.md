@@ -53,7 +53,7 @@ Notes:
 
 | Project Final                                   | Project Final (YouTube video)                   |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/19-project-final-01.jpg)          | [![](Resources/20-project-final-02.jpg)](https://youtu.be/rd8s7MKu5Gk) |
+| ![](Resources/07-project-final-01.jpg)          | [![](Resources/07-project-final-02.jpg)](https://youtu.be/rd8s7MKu5Gk) |
 
 See 'Rescources' sub-folder for more pictures & videos of the project.
 
