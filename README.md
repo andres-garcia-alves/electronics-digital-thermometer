@@ -66,8 +66,8 @@ v1.1 (2022.12.10) - Re-arrange LEDs pin-out to simplefy PCB.
 v1.2 (2022.12.11) - Using masked bits to improve character display.  
 v1.3 (2023.03.28) - Use of headers for better readability.  
 v1.4 (2023.04.08) - Hardware re-desing.  
-v1.5 (2025.12.20) - Update project structure.
-v1.6 (2025.12.26) - Adding KiCAD 9 schematics and PCB diagrams.
+v1.5 (2025.12.20) - Update project structure.  
+v1.6 (2025.12.26) - Adding KiCAD 9 schematics and PCB diagrams.  
 
 &nbsp;
 
