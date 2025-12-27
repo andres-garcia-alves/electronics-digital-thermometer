@@ -7,7 +7,7 @@ Arduino code for a digital thermometer (temperature, humidity and heat index) wi
 This project use the following electronic components:
 - 1 x Arduino UNO / Nano v3
 - 1 x DHT11 temperature/humidity sensor
-- 1 x 3461BS-1 display (4 digit, 7 segment multiplexed display)
+- 1 x Display 5461AS, 7 segment, 4 digit, common anode
 - 8 x 1k ohm resistors
 - 1 x 10k ohm resistor
 - 1 x Transistor BC547 NPN
@@ -25,26 +25,31 @@ The circuit:
 Notes:
 - This thermometer automatically turns off approximately 20 seconds after activation.
 - To increase this time, change the capacitor to one of higher capacitance.
+- Edit `Definitions.h` to adjust configured display pins to your own display model.
 
 &nbsp;
 
 ### Screenshots
 
-| Diagram - Schematics 01                         | Diagram - Schematics 02                         |
+| Schematics Diagram                              | PCB Layout                                      |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/01-diagram-squematic-01.jpg)      | ![](Resources/02-diagram-squematic-02.jpg)      |
+| ![](Resources/01-squematic-diagram-01.png)      | ![](Resources/02-pcb-layout-01.png)             |
 
-| Diagram - Physical Layout                       |  Prototype                                      |
+| PCB 3D Render                                   | PCB 3D Render                                   |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/03-diagram-physical-layout.jpg)   | ![](Resources/04-prototype-01.jpg)              |
+| ![](Resources/03-pcb-3d-render-01.png)          | ![](Resources/03-pcb-3d-render-02.png)          |
 
-| Building 01                                     |  Building 02                                    |
+| Prototype                                       | Building                                        |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/07-building-02.jpg)               | ![](Resources/13-building-08.jpg)               |
+| ![](Resources/04-prototype-01.jpg)              | ![](Resources/05-building-01.jpg)               |
 
-| Building 03                                     |  Box Shaping                                    |
+| Building                                        | Building                                        |
 |-------------------------------------------------|-------------------------------------------------|
-| ![](Resources/14-building-09.jpg)               | ![](Resources/16-box-shaping-02.jpg)            |
+| ![](Resources/05-building-02.jpg)               | ![](Resources/05-building-08.jpg)               |
+
+| Box Shaping                                     | Box Shaping                                     |
+|-------------------------------------------------|-------------------------------------------------|
+| ![](Resources/06-box-shaping-01.jpg)            | ![](Resources/06-box-shaping-02.jpg)            |
 
 | Project Final                                   | Project Final (YouTube video)                   |
 |-------------------------------------------------|-------------------------------------------------|
@@ -62,6 +67,7 @@ v1.2 (2022.12.11) - Using masked bits to improve character display.
 v1.3 (2023.03.28) - Use of headers for better readability.  
 v1.4 (2023.04.08) - Hardware re-desing.  
 v1.5 (2025.12.20) - Update project structure.
+v1.6 (2025.12.26) - Adding KiCAD 9 schematics and PCB diagrams.
 
 &nbsp;
 
