@@ -68,6 +68,7 @@ v1.3 (2023.03.28) - Use of headers for better readability.
 v1.4 (2023.04.08) - Hardware re-desing.  
 v1.5 (2025.12.20) - Update project structure.  
 v1.6 (2025.12.26) - Adding KiCAD 9 schematics and PCB diagrams.  
+v1.7 (2026.02.01) - Minor PCB improvements.  
 
 &nbsp;
 
